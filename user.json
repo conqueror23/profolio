@@ -1,0 +1,12 @@
+{
+    "name":"Bolong Wang"
+    ,"email":"wayneborong@gmail.com"
+    ,"phone":"0481222149"
+    ,"graduations":"University of Wollongong"
+    ,"degrees":"Master of Information Technology"
+    ,"skills":{
+        "front_end":["HTML","CSS","JavaScript","JQuery","AngularJS","Vue","Gulp"],
+        "back_end":["PHP","Nodejs","Laravel"],
+        "database":["SQL","MySQL","MongoDB","Oracle"]
+    }
+}

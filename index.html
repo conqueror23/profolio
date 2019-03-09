@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <meta name="viewpoint" content="width = device-width,initial-scale=1" >
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link type="text/css" rel="stylesheet" href='jquery/style.css'>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+        <script src="jquery/jq.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div class="SlideBar">
+                <a href="/index.html">Home</a>
+                <a href="/user.json">User Data</a>
+                <a href="#">Skills</a>
+                <a href="" onclick="CloseSlideBar()">Close</a>
+            </div>
+        <div class="navbar">
+            <ul>
+                    <li><a href="#" onclick="ShowSlideBar()">
+                        More Inofs
+                        <!-- <svg width="30" height="30">
+                                <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                                <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                                <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                        </svg> -->
+                    </a></li>
+                   
+                   <span class="navbar-main">
+                       <li><a href="/index.html">Home </a></li><li>
+                           <div class="droplist">
+                                   <a href="" >Skills</a>
+                               
+                                   <div class="dropdown">
+                                           <a id="0" value="Front_End" onclick="ShowPage(this.id)">Front_End</a>
+   
+                                           <a id="1" value="Back_End" onclick="ShowPage(this.id)">Back_End</a>
+   
+                                           <a id="2" value="Database" onclick="ShowPage(this.id)">Database</a>
+   
+                                   </div>
+                               </div>
+                   </li>
+                   </span>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="sidebar">
+                <div class="CompleteSidebar">
+                    <a onclick="HideSideBar()" href="#">Favorite Sites</a>
+                    <hr>
+                    <a href="https://youtube.com">Youtube</a>
+                    <a href="https://www.w3schools.com/default.asp">W3School</a>
+                    <a href="https://github.com/marketplace/zenhub">GitHub</a>
+                    <a href="https://www.uow.edu.au/index.html">UOW</a>
+                    <a href="https://www.google.com.au/">Google</a>
+                
+                </div>
+                <div class="AbbrSideBar">
+                    <a href="#" onclick="ShowSideBar()">Favorite Sites</a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="major">
+                    <div id="introduction">
+                            <h2>Bolong Wang</h2>
+                            <p>
+                                <img src="photo.jpg" align="right" hspace='20' vspace ='10'>
+
+                                A highly motivated and skilled postgraduate from the University of Wollongong,
+                                    with excellent academic results and experience in preparation and execution 
+                                    for Information Technology projects during academic study, where web development,
+                                    project management skills, security and risk controls, and business environment integration knowledge are gained, is confident to offer high standard workplace attitude, strong academic and working skills to the prospective employer. Highly outgoing individual with strong communication and customer service skills obtained from social working experience and an ability to work well in team environment are certainly value-added to my profile. Seeking an entry level position of Information Technology to fully utilize my skills and knowledge for achieving professional growth and developing best performance at workplace.<button id="ShowDetails" onclick="ShowDetails()">PersonalDetails</button>
+                            </p>
+                    </div>    
+                </div>
+                    <div class="progressbar">
+                        <div id="progress"></div>
+                    </div>
+                    <p id="info">
+                        </p>
+                <!-- content of the table is going to be filled by js files -->
+                <h1 id="personal">Personal Details</h1>
+                <table id="details" border="solid 1px gray">
+
+                </table>                
+                
+                 
+                <!-- Skill Sets -->
+                <!-- <p id="front_end"></p>
+
+                <p id="back_end"></p>
+    
+                <p id="database"></p> -->
+              
+
+
+                   
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer">
+
+        </div>
+            
+            
+    </body>
+</html>
